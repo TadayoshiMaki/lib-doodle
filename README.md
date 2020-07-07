@@ -1,2 +1,2 @@
 # lib-doodle
-Separate lib-ble from lib-doodle-framework.
+build for lib-ble and lib-doodle-framework for application.

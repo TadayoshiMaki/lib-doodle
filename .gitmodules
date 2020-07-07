@@ -1,0 +1,3 @@
+[submodule "lib-ble"]
+	path = lib-ble
+	url = https://github.com/TadayoshiMaki/lib-ble.git

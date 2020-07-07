@@ -1,0 +1,7 @@
+#ifndef LIB_DOODLE_FRAMEWORK__doodle_namespace_H_
+#define LIB_DOODLE_FRAMEWORK__doodle_namespace_H_
+
+#define LIB_DOODLE_FRAMEWORK_namespace_doodle_BEGIN namespace doodle {
+#define LIB_DOODLE_FRAMEWORK_namespace_doodle_END }
+
+#endif // LIB_DOODLE_FRAMEWORK__doodle_namespace_H_

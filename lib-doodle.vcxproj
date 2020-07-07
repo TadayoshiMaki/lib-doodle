@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\doodle\AsyncPointDetector.cpp" />
+    <ClCompile Include="src\doodle\BleIrPen.cpp" />
+    <ClCompile Include="src\doodle\BleIrPenManager.cpp" />
+    <ClCompile Include="src\doodle\CameraUtils.cpp" />
+    <ClCompile Include="src\doodle\DeviceTimeoutManager.cpp" />
+    <ClCompile Include="src\doodle\HsvSensor.cpp" />
+    <ClCompile Include="src\doodle\HsvSensorEval.cpp" />
+    <ClCompile Include="src\doodle\HsvSensorProd.cpp" />
+    <ClCompile Include="src\doodle\HsvSensorProdMultitrack.cpp" />
+    <ClCompile Include="src\doodle\InputEventProcessor.cpp" />
+    <ClCompile Include="src\doodle\InputManager.cpp" />
+    <ClCompile Include="src\doodle\IrPen.cpp" />
+    <ClCompile Include="src\doodle\IrPenHsvMapper.cpp" />
+    <ClCompile Include="src\doodle\IrPenManager.cpp" />
+    <ClCompile Include="src\doodle\IrPenSearchTimer.cpp" />
+    <ClCompile Include="src\doodle\MpjScreenSelector.cpp" />
+    <ClCompile Include="src\doodle\PenEventProcessor.cpp" />
+    <ClCompile Include="src\doodle\ScreenCoordinateMapper.cpp" />
+    <ClCompile Include="src\doodle\ScreenEventProcessor.cpp" />
+    <ClCompile Include="src\doodle\ScreenManager.cpp" />
+    <ClCompile Include="src\doodle\ScreensConfig.cpp" />
+    <ClCompile Include="src\doodle\System.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\doodle\AsyncPointDetector.h" />
+    <ClInclude Include="include\doodle\CameraUtils.h" />
+    <ClInclude Include="include\doodle\DeviceIdGenerator.h" />
+    <ClInclude Include="include\doodle\DeviceTimeoutManager.h" />
+    <ClInclude Include="include\doodle\DoodleEvent.h" />
+    <ClInclude Include="include\doodle\HsvSensor.h" />
+    <ClInclude Include="include\doodle\InputEventDispatcher.h" />
+    <ClInclude Include="include\doodle\InputEventListener.h" />
+    <ClInclude Include="include\doodle\InputEventProcessor.h" />
+    <ClInclude Include="include\doodle\InputManager.h" />
+    <ClInclude Include="src\doodle\BleIrPen.h" />
+    <ClInclude Include="include\doodle\IrPen.h" />
+    <ClInclude Include="include\doodle\IrPenEvent.h" />
+    <ClInclude Include="include\doodle\IrPenHsvMapper.h" />
+    <ClInclude Include="include\doodle\IrPenListener.h" />
+    <ClInclude Include="include\doodle\IrPenManager.h" />
+    <ClInclude Include="include\doodle\IrPenOperation.h" />
+    <ClInclude Include="include\doodle\IrPenSearchTimer.h" />
+    <ClInclude Include="include\doodle\IrPenState.h" />
+    <ClInclude Include="include\doodle\MemoryUtils.h" />
+    <ClInclude Include="include\doodle\MpjScreenLayoutHandler.h" />
+    <ClInclude Include="include\doodle\MpjScreenLayoutListener.h" />
+    <ClInclude Include="include\doodle\MpjScreenSelector.h" />
+    <ClInclude Include="include\doodle\PenEventProcessor.h" />
+    <ClInclude Include="include\doodle\ScreenCoordinateMapper.h" />
+    <ClInclude Include="include\doodle\ScreenEvent.h" />
+    <ClInclude Include="include\doodle\ScreenEventDispatcher.h" />
+    <ClInclude Include="include\doodle\ScreenEventListener.h" />
+    <ClInclude Include="include\doodle\ScreenEventProcessor.h" />
+    <ClInclude Include="include\doodle\ScreenManager.h" />
+    <ClInclude Include="include\doodle\ScreenProperties.h" />
+    <ClInclude Include="include\doodle\ScreensConfig.h" />
+    <ClInclude Include="include\doodle\StrokeStatus.h" />
+    <ClInclude Include="include\doodle\StrokeStatusBank.h" />
+    <ClInclude Include="include\doodle\System.h" />
+    <ClInclude Include="include\doodle\Ticker.h" />
+    <ClInclude Include="include\doodle\Timer.h" />
+    <ClInclude Include="include\doodle\Types.h" />
+    <ClInclude Include="src\doodle\CharacteristicValueChangeOperation.h" />
+    <ClInclude Include="src\doodle\HsvSensorEval.h" />
+    <ClInclude Include="src\doodle\HsvSensorProd.h" />
+    <ClInclude Include="src\doodle\HsvSensorProdMultitrack.h" />
+    <ClInclude Include="src\doodle\BleIrPenManager.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7BA77E9E-2A4C-48AB-903D-E7A6A149C8D8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libdoodleframework</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectName>lib-doodle</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>3rdparty\picojson\include;3rdparty\mpjsdk\include;3rdparty\SentechSDK\Include\GenICam;3rdparty\SentechSDK\Include\StDSF;3rdparty\SentechSDK\Include\StApi;3rdparty\camera\include;include;src;.\lib-ble\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>HsvCam.lib;opencv_world330d.lib;GCBase_MD_VC120_v3_0_Sentech.lib;GenApi_MD_VC120_v3_0_Sentech.lib;StApi_IP_MD_VC120_v1_0.lib;StAPi_TL_MD_VC120_v1_0.lib;lib-ble_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>3rdparty\camera\lib\$(Platform)\$(Configuration);3rdparty\SentechSDK\lib\$(Platform);lib-ble\bin\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile />
+      <AdditionalIncludeDirectories>3rdparty\picojson\include;3rdparty\mpjsdk\include;3rdparty\SentechSDK\Include\GenICam;3rdparty\SentechSDK\Include\StDSF;3rdparty\SentechSDK\Include\StApi;3rdparty\camera\include;include;src;.\lib-ble\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>HsvCam.lib;opencv_world330.lib;GCBase_MD_VC120_v3_0_Sentech.lib;GenApi_MD_VC120_v3_0_Sentech.lib;StApi_IP_MD_VC120_v1_0.lib;StAPi_TL_MD_VC120_v1_0.lib;lib-ble.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>3rdparty\camera\lib\$(Platform)\$(Configuration);3rdparty\SentechSDK\lib\$(Platform);lib-ble\bin\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
